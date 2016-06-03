@@ -8,8 +8,8 @@
     "watch": "watchify app/src/js/index.js -t babelify -o app/dest/js/app.js"
   },
   "author": {
-      "name": "Hiroyuki Tanaka",
-      "email": "h.tanaka.0325@gmail.com"
+    "name": "Hiroyuki Tanaka",
+    "email": "h.tanaka.0325@gmail.com"
   },
   "license": "ISC",
   "devDependencies": {
@@ -20,6 +20,8 @@
     "browserify": "^13.0.1",
     "react": "^15.1.0",
     "react-dom": "^15.1.0",
-    "watchify": "^3.7.0"
+    "watchify": "^3.7.0",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
   }
 }
