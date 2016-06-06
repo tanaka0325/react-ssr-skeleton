@@ -1,6 +1,6 @@
 module.exports = {
     name: 'server',
-    entry: __dirname + "/src/server.js",
+    entry: __dirname + "/src/js/server.js",
     target: 'node',
     output: {
       path: __dirname,
