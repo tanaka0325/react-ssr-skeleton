@@ -4,8 +4,12 @@
   "description": "skeleton for react.",
   "main": "index.js",
   "scripts": {
-    "build": "browserify app/src/js/index.js -t babelify -o app/dest/js/app.js",
-    "watch": "watchify app/src/js/index.js -t babelify -o app/dest/js/app.js"
+    "start": "npm run start:prod || npm run start:dev",
+    "start:dev": "webpack-dev-server --inline --content-base public/ --history-api-fallback",
+    "start:prod": "npm run build && node server.bundle.js",
+    "build:client": "webpack",
+    "build:server": "webpack --config webpack.server.config.js",
+    "build": "npm run build:client && npm run build:server"
   },
   "author": {
     "name": "Hiroyuki Tanaka",
