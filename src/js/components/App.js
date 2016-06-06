@@ -9,6 +9,7 @@ class App extends React.Component {
         <ul>
           <li><Link to="/about">About</Link></li>
           <li><Link to="/list">List</Link></li>
+          <li><Link to="/">Top</Link></li>
         </ul>
         {this.props.children}
       </div>
