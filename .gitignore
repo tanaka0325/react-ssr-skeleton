@@ -72,5 +72,6 @@ jspm_packages
 ### Git ###
 *.orig
 
-app/dest/js/*
 !.gitkeep
+public/app.bundle.js
+server.bundle.js
